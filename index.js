@@ -1,11 +1,10 @@
 const inquirer = require("inquirer");
 const axios = require("axios");
-const fs = require("fs");
 const puppeteer = require("puppeteer");
 const generateHTML = require("./generateHTML.js")
 
 //Declare variables 
-let finalHTML;
+let finalHTML, PDFname;
 
 //Call functions
 init();
@@ -22,6 +21,7 @@ async function init() {
         profile.stars = stars;
         const html = generateHTML(profile);
         finalHTML = html;
+        PDFname = name;
         generatePDF();
     }
     catch (err) {
@@ -64,7 +64,7 @@ async function generatePDF() {
 
         await page.setContent(`${finalHTML}`);
         await page.pdf({
-            path: `test.pdf`,
+            path: `${ PDFname }.pdf`,
             pageRanges: "1",
             format: "A4",
             printBackground: true
