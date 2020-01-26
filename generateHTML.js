@@ -212,13 +212,15 @@ function generateHTML(data) {
               <h2>My name is ${ data.name}!</h2>
               <h4>Currently @ ${ data.company}</h4>
               <div class="links-nav">
-                  <a href="#">
+                  <a href="<li class="nav-link"><a href="https://www.google.com/maps/place/${
+                    data.location
+                  }">
                       <div class="nav-link"><i class="fas fa-location-arrow"></i> ${ data.location}</div>
                   </a>
-                  <a href="#">
+                  <a href="https://github.com/E-Huynh">
                       <div class="nav-link"><i class="fab fa-github-alt"></i> Github</div>
                   </a>
-                  <a href="#">
+                  <a href="https://e-huynh.github.io/updated_portfolio/">
                       <div class="nav-link"><i class="fas fa-rss"></i> Blog</div>
                   </a>
               </div>
