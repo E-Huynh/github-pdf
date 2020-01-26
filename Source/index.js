@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const axios = require("axios");
 const puppeteer = require("puppeteer");
-const generateHTML = require("./generateHTML.js")
+const generateHTML = require("../generateHTML.js")
 
 //Declare variables 
 let finalHTML, PDFname;
