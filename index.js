@@ -4,7 +4,7 @@ const fs = require("fs");
 const puppeteer = require("puppeteer");
 const generateHTML = require("./generateHTML.js")
 
-//Declare variables
+//Declare variables 
 let finalHTML;
 
 //Call functions
