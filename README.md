@@ -7,7 +7,7 @@ Erik.W.Huynh@Gmail.com
 
 [LinkedIn](https://www.linkedin.com/in/erik-huynh-228321196/)
 
-[Portfolio](https://e-huynh.github.io/updated_portfolio/)
+[Portfolio](https://e-huynh.github.io/portfolio-gram/)
 ## Project Description
 This project uses a username search and chosen favorite color to pull data from Github's API and generate a PDF.
 ## Functionality
